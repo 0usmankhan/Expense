@@ -255,7 +255,7 @@ export const getFirebaseSetupRecommendations = (diagnostics: any): string[] => {
     recommendations.push('  2. Enable "Phone" provider');
     recommendations.push('  3. Configure reCAPTCHA settings');
     recommendations.push('  4. Set up billing for SMS (required)');
-    recommendations.push('  5. Add authorized domains (localhost, moneydesk.co)');
+    recommendations.push('  5. Add authorized domains (localhost, spendsmart.app)');
   }
 
   // General recommendations

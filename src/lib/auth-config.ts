@@ -3,7 +3,7 @@
 
 export const AUTH_CONFIG = {
   // Your app's domain for email links
-  domain: process.env.NEXT_PUBLIC_APP_DOMAIN || 'moneydesk.co',
+  domain: process.env.NEXT_PUBLIC_APP_DOMAIN || 'spendsmart.app',
 };
 
 // Helper function to create action code settings for web app
@@ -18,7 +18,7 @@ export const createActionCodeSettings = (url: string) => ({
 // Helper function to create unified auth action URL
 export const createAuthActionUrl = (email: string) => {
   // Use environment variable if available, otherwise use production domain
-  const baseUrl = process.env.NEXT_PUBLIC_APP_DOMAIN || 'moneydesk.co';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_DOMAIN || 'spendsmart.app';
   const protocol = 'https';
   return `${protocol}://${baseUrl}/auth-action?email=${encodeURIComponent(email)}`;
 };

@@ -26,13 +26,13 @@ const sendOTPToEmail = async (email: string, otp: string): Promise<void> => {
   // This is a placeholder - you would implement actual email sending here
   // For now, we'll just log it to console for testing
   console.log(`📧 OTP for ${email}: ${otp}`);
-  console.log(`🔗 Verification URL: https://moneydesk.co/verify-otp?email=${encodeURIComponent(email)}&otp=${otp}`);
+  console.log(`🔗 Verification URL: https://spendsmart.app/verify-otp?email=${encodeURIComponent(email)}&otp=${otp}`);
   
   // In production, you would send an actual email here
   // Example using a service like SendGrid, AWS SES, etc.
   // await sendEmail({
   //   to: email,
-  //   subject: 'Your MoneyDesk Verification Code',
+  //   subject: 'Your Spend Smart Verification Code',
   //   html: `
   //     <h2>Email Verification</h2>
   //     <p>Your verification code is: <strong>${otp}</strong></p>

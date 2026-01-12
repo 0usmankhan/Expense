@@ -37,7 +37,7 @@ function initializeFirebaseAdmin() {
           
           adminApp = initializeApp({
             credential: cert(serviceAccount),
-            projectId: serviceAccount.project_id || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "chirpchat-yi7xn",
+            projectId: serviceAccount.project_id || process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
           });
           console.log('Firebase Admin SDK initialized with service account key');
         } catch (parseError) {
@@ -50,7 +50,7 @@ function initializeFirebaseAdmin() {
         console.log('No service account key found, trying Application Default Credentials');
         
         adminApp = initializeApp({
-          projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "chirpchat-yi7xn",
+          projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
         });
         console.log('Firebase Admin SDK initialized with Application Default Credentials');
       }

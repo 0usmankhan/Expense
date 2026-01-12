@@ -107,7 +107,7 @@ export function AIDemo() {
       <div className="text-center">
         <h2 className="text-2xl font-bold mb-2">AI Features Demo</h2>
         <p className="text-muted-foreground">
-          Test the AI-powered features of MoneyDesk.co
+          Test the AI-powered features of Spend Smart
         </p>
       </div>
 

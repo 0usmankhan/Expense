@@ -149,7 +149,7 @@ export function LoginForm() {
         <CardDescription className={isForgotPassword ? "text-center text-gray-600 dark:text-gray-400" : ""}>
           {isForgotPassword
             ? "We'll send you a secure link to reset your password"
-            : "Sign in to your MoneyDesk account."}
+            : "Sign in to your Spend Smart account."}
         </CardDescription>
       </CardHeader>
       <CardContent>

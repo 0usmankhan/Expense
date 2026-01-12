@@ -291,7 +291,7 @@ export function Header() {
           className="flex items-center gap-2 text-lg font-semibold md:text-base flex-shrink-0"
         >
           <Logo className="h-6 w-6" />
-          <span className="hidden sm:inline">MoneyDesk</span>
+          <span className="hidden sm:inline">Spend Smart</span>
         </Link>
 
         {/* Desktop Navigation */}

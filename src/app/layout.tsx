@@ -23,8 +23,8 @@ import { Analytics } from '@vercel/analytics/next';
 import ErrorBoundary from '@/components/error-boundary';
 
 export const metadata: Metadata = {
-  title: 'MoneyDesk',
-  description: 'Personal Expense & Income Management SaaS',
+  title: 'Spend Smart',
+  description: 'Personal Expense & Income Management',
   icons: {
     icon: [
       { url: '/favicon.svg?v=4', type: 'image/svg+xml' },

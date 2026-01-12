@@ -96,7 +96,7 @@ export function WelcomePopup() {
             </div>
           </div>
           <DialogTitle className="text-2xl font-bold text-center">
-            Welcome to MoneyDesk! 🎉
+            Welcome to Spend Smart! 🎉
           </DialogTitle>
           <DialogDescription className="text-center text-base mt-2">
             Hi {user?.displayName || 'there'}! Let's get your financial journey started.
@@ -109,7 +109,7 @@ export function WelcomePopup() {
               <div className="text-center mb-6">
                 <h3 className="text-lg font-semibold mb-2">Quick Setup Guide</h3>
                 <p className="text-sm text-muted-foreground">
-                  Set up these essentials to make the most of MoneyDesk
+                  Set up these essentials to make the most of Spend Smart
                 </p>
               </div>
 

@@ -118,7 +118,7 @@ export function ExitSurveyForm({ isOpen, onClose, onProceedWithDeletion }: ExitS
             <Alert className="border-green-500/50 text-green-700 dark:text-green-400 [&>svg]:text-green-700 dark:[&>svg]:text-green-400">
               <CheckCircle className="h-4 w-4" />
               <AlertDescription>
-                Your account will be deleted in a moment. We appreciate your time with MoneyDesk.co!
+                Your account will be deleted in a moment. We appreciate your time with Spend Smart!
               </AlertDescription>
             </Alert>
           </div>

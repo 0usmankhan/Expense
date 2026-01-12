@@ -38,11 +38,11 @@ export const sendUserAccessUpdateEmail = async (
   moduleAccess: any,
   changes: string[]
 ): Promise<boolean> => {
-  const subject = 'Your MoneyDesk.co Access Has Been Updated';
+  const subject = 'Your Spend Smart Access Has Been Updated';
   const body = `
 Hello ${userName},
 
-Your access to MoneyDesk.co modules has been updated by an administrator.
+Your access to Spend Smart modules has been updated by an administrator.
 
 Changes made:
 ${changes.map(change => `• ${change}`).join('\n')}
@@ -60,7 +60,7 @@ Current access:
 If you have any questions, please contact support.
 
 Best regards,
-MoneyDesk.co Team
+Spend Smart Team
   `;
 
   return await sendEmail({
@@ -76,11 +76,11 @@ export const sendSubscriptionUpdateEmail = async (
   tier: string,
   status: string
 ): Promise<boolean> => {
-  const subject = 'Your MoneyDesk.co Subscription Has Been Updated';
+  const subject = 'Your Spend Smart Subscription Has Been Updated';
   const body = `
 Hello ${userName},
 
-Your MoneyDesk.co subscription has been updated by an administrator.
+Your Spend Smart subscription has been updated by an administrator.
 
 New subscription details:
 • Tier: ${tier.charAt(0).toUpperCase() + tier.slice(1)}
@@ -89,7 +89,7 @@ New subscription details:
 If you have any questions, please contact support.
 
 Best regards,
-MoneyDesk.co Team
+Spend Smart Team
   `;
 
   return await sendEmail({
@@ -105,13 +105,13 @@ export const sendUserStatusUpdateEmail = async (
   isActive: boolean
 ): Promise<boolean> => {
   const subject = isActive 
-    ? 'Your MoneyDesk.co Account Has Been Reactivated'
-    : 'Your MoneyDesk.co Account Has Been Suspended';
+    ? 'Your Spend Smart Account Has Been Reactivated'
+    : 'Your Spend Smart Account Has Been Suspended';
   
   const body = `
 Hello ${userName},
 
-Your MoneyDesk.co account status has been updated by an administrator.
+Your Spend Smart account status has been updated by an administrator.
 
 Account status: ${isActive ? 'Active' : 'Suspended'}
 
@@ -123,7 +123,7 @@ ${isActive
 If you have any questions, please contact support.
 
 Best regards,
-MoneyDesk.co Team
+Spend Smart Team
   `;
 
   return await sendEmail({
@@ -138,11 +138,11 @@ export const sendPasswordResetEmail = async (
   userName: string,
   resetLink: string
 ): Promise<boolean> => {
-  const subject = 'Password Reset Request - MoneyDesk.co';
+  const subject = 'Password Reset Request - Spend Smart';
   const body = `
 Hello ${userName},
 
-You have requested a password reset for your MoneyDesk.co account.
+You have requested a password reset for your Spend Smart account.
 
 To reset your password, please click the link below:
 ${resetLink}
@@ -156,7 +156,7 @@ For security reasons, please do not share this link with anyone.
 If you have any questions or need assistance, please contact our support team.
 
 Best regards,
-MoneyDesk.co Team
+Spend Smart Team
   `;
 
   const html = `
@@ -165,7 +165,7 @@ MoneyDesk.co Team
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Reset - MoneyDesk.co</title>
+    <title>Password Reset - Spend Smart</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
         .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
@@ -179,11 +179,11 @@ MoneyDesk.co Team
 <body>
     <div class="header">
         <h1>🔐 Password Reset Request</h1>
-        <p>MoneyDesk.co</p>
+        <p>Spend Smart</p>
     </div>
     <div class="content">
         <h2>Hello ${userName},</h2>
-        <p>You have requested a password reset for your MoneyDesk.co account.</p>
+        <p>You have requested a password reset for your Spend Smart account.</p>
         
         <p>To reset your password, please click the button below:</p>
         
@@ -206,7 +206,7 @@ MoneyDesk.co Team
         <p>If you have any questions or need assistance, please contact our support team.</p>
     </div>
     <div class="footer">
-        <p>Best regards,<br>MoneyDesk.co Team</p>
+        <p>Best regards,<br>Spend Smart Team</p>
         <p>This is an automated message. Please do not reply to this email.</p>
     </div>
 </body>
@@ -247,7 +247,7 @@ ${surveyData.reason}
 Please reach out to this user to understand their concerns and potentially retain them as a customer.
 
 Best regards,
-MoneyDesk.co System
+Spend Smart System
   `;
 
   return await sendEmail({

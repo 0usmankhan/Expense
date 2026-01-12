@@ -139,12 +139,12 @@ export function ModuleAccessGuard({
 
   const handleAction = () => {
     if (upgradeInfo.actionType === 'support') {
-      window.open('mailto:support@moneydesk.co?subject=Module Access Request', '_blank');
+      window.open('mailto:support@spendsmart.app?subject=Module Access Request', '_blank');
     } else if (upgradeInfo.actionType === 'upgrade') {
       // Navigate to upgrade page or open upgrade modal
       window.location.href = '/settings?tab=subscription';
     } else if (upgradeInfo.actionType === 'enterprise') {
-      window.open('mailto:sales@moneydesk.co?subject=Enterprise Plan Inquiry', '_blank');
+      window.open('mailto:sales@spendsmart.app?subject=Enterprise Plan Inquiry', '_blank');
     }
   };
 
@@ -189,10 +189,10 @@ export function ModuleAccessGuard({
           <div className="text-xs text-muted-foreground">
             Need help? Contact us at{' '}
             <a 
-              href="mailto:support@moneydesk.co" 
+              href="mailto:support@spendsmart.app" 
               className="text-primary hover:underline"
             >
-              support@moneydesk.co
+              support@spendsmart.app
             </a>
           </div>
         </CardContent>

@@ -5,9 +5,9 @@ import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyApRM4MIHiZCRgoLxGkRI-6nnlmvAO_9CA",
-  authDomain: "chirpchat-yi7xn.firebaseapp.com",
-  projectId: "chirpchat-yi7xn",
-  storageBucket: "chirpchat-yi7xn.appspot.com",
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || "",
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "",
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || "",
   messagingSenderId: "786711867654",
   appId: "1:786711867654:web:a845ace12b0f9c526c2e87"
 };

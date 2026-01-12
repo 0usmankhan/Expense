@@ -8,8 +8,8 @@ export async function GET(request: NextRequest) {
     
     // Test basic Firebase configuration
     const config = {
-      projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || "chirpchat-yi7xn",
-      authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || "chirpchat-yi7xn.firebaseapp.com",
+      projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+      authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
     };
     
     console.log('Firebase config:', config);

@@ -275,7 +275,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       
       // Create action code settings with custom URL
       const actionCodeSettings = {
-        url: `https://moneydesk.co/reset-password`,
+        url: `https://spendsmart.app/reset-password`,
         handleCodeInApp: false,
       };
       

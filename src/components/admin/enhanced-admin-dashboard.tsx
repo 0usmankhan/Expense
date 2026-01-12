@@ -325,7 +325,7 @@ export function EnhancedAdminDashboard() {
         <div>
           <h2 className="text-2xl font-bold tracking-tight">Dashboard Overview</h2>
           <p className="text-muted-foreground">
-            Real-time insights into your MoneyDesk.co platform
+            Real-time insights into your Spend Smart platform
           </p>
         </div>
         <div className="flex items-center gap-3">
